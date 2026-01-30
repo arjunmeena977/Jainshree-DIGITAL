@@ -3,7 +3,15 @@ import './Hero.css';
 const Hero = () => {
     return (
         <section id="hero" className="hero">
-            <div className="hero-background"></div>
+            <div className="hero-background-image-container">
+                <div className="hero-overlay"></div>
+                <img
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
+                    alt="Digital Technology Background"
+                    className="hero-bg-img"
+                    fetchPriority="high"
+                />
+            </div>
             <div className="container hero-container">
                 <div className="hero-content">
                     <h1 className="hero-title">
